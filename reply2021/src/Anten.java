@@ -1,9 +1,10 @@
 public class Anten {
-    
-    double latencyP;
-    double speedP;
-    Anten(double latencyP, double speedP){
-        this.latencyP = latencyP;
-        this.speedP = speedP;
+
+    int range;
+    double speed;
+
+    Anten(int range, double speed) {
+        this.range = range;
+        this.speed = speed;
     }
 }
