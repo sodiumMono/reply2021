@@ -1,15 +1,19 @@
-public class Building {
+public class Building implements Comparable<Building>{
 
-    double latencyP;
-    double speedP;
+    int  latencyP;
+    int  speedP;
     int coordinateX;
     int coordinateY;
 
-    Building(double latencyP, double speedP, int coordinateX, int coordinateY) {
+    Building(int  latencyP, int  speedP, int coordinateX, int coordinateY) {
         this.latencyP = latencyP;
         this.speedP = speedP;
         this.coordinateX = coordinateX;
         this.coordinateY = coordinateY;
     }
 
+    @Override
+    public int compareTo(Building other) {
+        return this.speedP - other.speedP;
+    }
 }
