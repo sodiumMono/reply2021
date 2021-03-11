@@ -32,7 +32,7 @@ public class App {
 
         }
         ArrayList<Anten> antens = new ArrayList<>();
-        for (int i = 0; i < buildingCount; i++) {
+        for (int i = 0; i < antenaCount; i++) {
             int r;
 
             int s;
@@ -49,7 +49,7 @@ public class App {
 
 
 
-        
+
         scanner.close();
     }
 }
