@@ -52,4 +52,9 @@ public class App {
 
         scanner.close();
     }
+    public int distance(int x1,int y1,int x2,int y2){
+        int distance = Math.abs(x1-x2) + Math.abs(y1-y2);
+        return distance;
+    }
 }
+
